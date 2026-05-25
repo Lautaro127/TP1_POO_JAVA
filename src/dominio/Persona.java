@@ -14,9 +14,10 @@ public class Persona {
 	
 	
 	public Persona() {
+		setDni("Sin DNI");
 		setNombre("Sin nombre");
 		setApellido("Sin apellido");
-		setFechaNacimiento(LocalDate.of(0000, 00, 00));
+		setFechaNacimiento(LocalDate.of(1900, 01, 01));
 		setGenero("Sin genero");
 		setDireccion("Sin direccion");
 		setTelefono("Sin telefono");
@@ -24,6 +25,7 @@ public class Persona {
 	}
 	
 	public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String Email) {
+		setDni(dni);
 		setNombre(nombre);
 		setApellido(apellido);
 		setFechaNacimiento(fechaNacimiento);
@@ -32,6 +34,7 @@ public class Persona {
 		setTelefono(telefono);
 		setEmail(Email);
 	}
+	
 
 	public String getDni() {
 		return dni;
