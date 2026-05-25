@@ -11,6 +11,28 @@ public class Persona {
 	private String direccion;
 	private String telefono;
 	private String email;
+	
+	
+	public Persona() {
+		setNombre("Sin nombre");
+		setApellido("Sin apellido");
+		setFechaNacimiento(LocalDate.of(0000, 00, 00));
+		setGenero("Sin genero");
+		setDireccion("Sin direccion");
+		setTelefono("Sin telefono");
+		setEmail("Sin correo");
+	}
+	
+	public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String Email) {
+		setNombre(nombre);
+		setApellido(apellido);
+		setFechaNacimiento(fechaNacimiento);
+		setGenero(genero);
+		setDireccion(direccion);
+		setTelefono(telefono);
+		setEmail(Email);
+	}
+
 	public String getDni() {
 		return dni;
 	}
